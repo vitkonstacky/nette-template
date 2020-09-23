@@ -1,0 +1,27 @@
+<!doctype html>
+<html{ifset $locale} lang="{$locale}"{/ifset}>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{ifset title}{include title}{/ifset}</title>
+        {ifset metas}
+            {include metas}
+        {/ifset}
+        <title>{ifset title}{include title}{/ifset}</title>
+        {ifset styles}
+            {include styles}
+        {/ifset}
+    </head>
+    <body>
+        {foreach $flashes as $flash}
+            <div n:class="flash, $flash->type">{$flash->message}</div>
+        {/foreach}
+        {ifset content}
+            {include content}
+        {/ifset}
+        {ifset scripts}
+            {include scripts}
+        {/ifset}
+    </body>
+</html>

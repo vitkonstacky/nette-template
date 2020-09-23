@@ -1,0 +1,6 @@
+parameters:
+    doctrine:
+        host: mysql
+        user: dev
+        password: dev
+        dbname: dev

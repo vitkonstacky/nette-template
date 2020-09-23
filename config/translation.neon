@@ -1,0 +1,10 @@
+extensions:
+    translation: Contributte\Translation\DI\TranslationExtension
+
+
+translation:
+    locales:
+        whitelist: [cs, en]
+        default: cs
+    dirs:
+        - %translationDir%

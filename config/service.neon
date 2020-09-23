@@ -1,0 +1,2 @@
+services:
+    - App\Service\DirectoryProvider\DirectoryProvider(%templateDir%, %translationDir%, %appDir%)
